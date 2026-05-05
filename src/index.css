@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: #0f172a;
+  background: #ffffff;
+}
+
+:focus-visible {
+  outline: 3px solid #f97316;
+  outline-offset: 3px;
+}

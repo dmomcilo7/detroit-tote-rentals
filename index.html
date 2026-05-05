@@ -171,6 +171,18 @@
     </script>
   </head>
   <body>
+    <!-- Hidden form for Netlify form detection (JS-rendered forms need this) -->
+    <form name="quote" netlify netlify-honeypot="bot-field" hidden>
+      <input name="bot-field" />
+      <input name="name" />
+      <input name="email" />
+      <input name="phone" />
+      <input name="city" />
+      <input name="move-date" />
+      <input name="package" />
+      <textarea name="message"></textarea>
+    </form>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
 

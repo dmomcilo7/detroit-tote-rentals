@@ -46,8 +46,10 @@ export function QuoteForm() {
     setSubmitted(true);
   }
 
+  const inputBase = 'mt-2 w-full rounded-lg border px-4 py-3 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 focus:outline-none';
+
   return (
-    <section id="quote" className="px-4 py-16">
+    <section id="quote" className="px-4 py-20">
       <div className="mx-auto max-w-3xl">
         <h2 className="text-3xl font-bold text-slate-950">Request a quote</h2>
         <p className="mt-3 text-slate-700">
@@ -94,7 +96,7 @@ export function QuoteForm() {
               required
               aria-invalid={errors.name ? 'true' : undefined}
               aria-describedby={errors.name ? 'name-error' : undefined}
-              className={`mt-2 w-full rounded-lg border px-4 py-3 ${
+              className={`${inputBase} ${
                 errors.name ? 'border-red-500' : 'border-slate-300'
               }`}
             />
@@ -118,7 +120,7 @@ export function QuoteForm() {
                 required
                 aria-invalid={errors.email ? 'true' : undefined}
                 aria-describedby={errors.email ? 'email-error' : undefined}
-                className={`mt-2 w-full rounded-lg border px-4 py-3 ${
+                className={`${inputBase} ${
                   errors.email ? 'border-red-500' : 'border-slate-300'
                 }`}
               />
@@ -137,7 +139,7 @@ export function QuoteForm() {
                 id="phone"
                 name="phone"
                 type="tel"
-                className="mt-2 w-full rounded-lg border border-slate-300 px-4 py-3"
+                className={`${inputBase} border-slate-300`}
               />
             </div>
           </div>
@@ -154,7 +156,7 @@ export function QuoteForm() {
                 required
                 aria-invalid={errors.city ? 'true' : undefined}
                 aria-describedby={errors.city ? 'city-error' : undefined}
-                className={`mt-2 w-full rounded-lg border px-4 py-3 ${
+                className={`${inputBase} ${
                   errors.city ? 'border-red-500' : 'border-slate-300'
                 }`}
               />
@@ -173,7 +175,7 @@ export function QuoteForm() {
                 id="move-date"
                 name="move-date"
                 type="date"
-                className="mt-2 w-full rounded-lg border border-slate-300 px-4 py-3"
+                className={`${inputBase} border-slate-300`}
               />
             </div>
           </div>
@@ -186,7 +188,7 @@ export function QuoteForm() {
             <select
               id="package"
               name="package"
-              className="mt-2 w-full rounded-lg border border-slate-300 px-4 py-3"
+              className={`${inputBase} border-slate-300`}
             >
               <option value="">Select one</option>
               <option>20 totes</option>
@@ -205,13 +207,13 @@ export function QuoteForm() {
               id="message"
               name="message"
               rows={5}
-              className="mt-2 w-full rounded-lg border border-slate-300 px-4 py-3"
+              className={`${inputBase} border-slate-300`}
             />
           </div>
 
           <button
             type="submit"
-            className="rounded-full bg-orange-600 px-6 py-3 font-semibold text-white hover:bg-orange-700"
+            className="rounded-full bg-blue-600 px-6 py-3 font-semibold text-white hover:bg-blue-700"
           >
             Send Quote Request
           </button>

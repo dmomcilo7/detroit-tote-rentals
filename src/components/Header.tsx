@@ -29,7 +29,7 @@ export function Header() {
         <div className="flex items-center gap-3">
           <a
             href="#quote"
-            className="hidden rounded-full bg-orange-600 px-5 py-2 font-semibold text-white hover:bg-orange-700 sm:inline-block"
+            className="hidden rounded-full bg-blue-600 px-5 py-2 font-semibold text-white hover:bg-blue-700 sm:inline-block"
           >
             Get a Quote
           </a>
@@ -93,7 +93,7 @@ export function Header() {
               <a
                 href="#quote"
                 onClick={() => setMenuOpen(false)}
-                className="block rounded-full bg-orange-600 px-5 py-3 text-center font-semibold text-white hover:bg-orange-700"
+                className="block rounded-full bg-blue-600 px-5 py-3 text-center font-semibold text-white hover:bg-blue-700"
               >
                 Get a Quote
               </a>

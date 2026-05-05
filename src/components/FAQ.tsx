@@ -2,7 +2,7 @@ import { faqs } from '../data/faqs';
 
 export function FAQ() {
   return (
-    <section className="bg-slate-50 px-4 py-16">
+    <section className="bg-slate-50 px-4 py-20">
       <div className="mx-auto max-w-4xl">
         <h2 className="text-3xl font-bold text-slate-950">
           Frequently asked questions
@@ -14,7 +14,7 @@ export function FAQ() {
               <summary className="flex cursor-pointer items-center justify-between font-bold text-slate-950">
                 <span>{faq.question}</span>
                 <svg
-                  className="h-5 w-5 shrink-0 text-slate-500 transition-transform group-open:rotate-180"
+                  className="h-5 w-5 shrink-0 text-blue-500 transition-transform group-open:rotate-180"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"

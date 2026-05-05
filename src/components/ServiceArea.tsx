@@ -12,7 +12,7 @@ const cities = [
 
 export function ServiceArea() {
   return (
-    <section id="service-area" className="px-4 py-16">
+    <section id="service-area" className="px-4 py-20">
       <div className="mx-auto max-w-6xl">
         <h2 className="text-3xl font-bold text-slate-950">
           Serving Metro Detroit
@@ -26,8 +26,9 @@ export function ServiceArea() {
           {cities.map((city) => (
             <li
               key={city}
-              className="rounded-xl border border-slate-200 px-4 py-3"
+              className="flex items-center gap-3 rounded-xl border border-slate-200 px-4 py-3"
             >
+              <span className="h-2 w-2 shrink-0 rounded-full bg-blue-600" aria-hidden="true" />
               {city}
             </li>
           ))}

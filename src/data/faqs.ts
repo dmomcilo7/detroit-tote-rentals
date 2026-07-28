@@ -1,5 +1,10 @@
 export const faqs = [
   {
+    question: 'Does submitting the form reserve my totes?',
+    answer:
+      'No. Submitting the form is an inquiry, not a reservation. We confirm availability, send reservation details and an invoice, and payment finalizes the reservation.',
+  },
+  {
     question: 'How long can I keep the totes?',
     answer:
       'Most rentals are planned around a one-week period, with flexibility depending on availability.',

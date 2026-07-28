@@ -92,7 +92,7 @@ export function QuoteForm() {
   return (
     <section id="quote" className="px-4 py-20">
       <div className="mx-auto max-w-3xl">
-        <h2 className="text-3xl font-bold text-slate-950">Request a Quote</h2>
+        <h2 className="text-3xl font-bold text-slate-950">Request a quote</h2>
         <p className="mt-3 text-slate-700">
           Tell us about your move and we'll follow up with availability, pricing,
           and next steps. City or ZIP code is enough for now.

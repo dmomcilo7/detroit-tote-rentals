@@ -4,7 +4,7 @@ const navLinks = [
   { href: '#how-it-works', label: 'How It Works' },
   { href: '#pricing', label: 'Pricing' },
   { href: '#service-area', label: 'Service Area' },
-  { href: '#quote', label: 'Quote' },
+  { href: '#quote', label: 'Request a Quote' },
 ] as const;
 
 export function Header() {
@@ -29,10 +29,10 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2 sm:gap-3">
-          {/* Phone CTA — always visible */}
+          {/* Email CTA — always visible */}
           <a
-            href="tel:+15865492876"
-            aria-label="Call or text us"
+            href="mailto:dmomcilo@hotmail.com"
+            aria-label="Email us"
             className="inline-flex items-center gap-1.5 rounded-full border border-blue-200 bg-blue-50 px-3 py-2 text-sm font-semibold text-blue-700 hover:bg-blue-100 sm:px-4"
           >
             <svg
@@ -46,10 +46,10 @@ export function Header() {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth={2}
-                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
               />
             </svg>
-            <span className="hidden sm:inline">Call / Text</span>
+            <span className="hidden sm:inline">Contact</span>
           </a>
 
           {/* Desktop quote button */}
@@ -57,7 +57,7 @@ export function Header() {
             href="#quote"
             className="hidden rounded-full bg-blue-600 px-5 py-2 font-semibold text-white hover:bg-blue-700 sm:inline-block"
           >
-            Get a Quote
+            Request a Quote
           </a>
 
           {/* Mobile hamburger */}
@@ -117,7 +117,7 @@ export function Header() {
             ))}
             <li>
               <a
-                href="tel:+15865492876"
+                href="mailto:dmomcilo@hotmail.com"
                 onClick={() => setMenuOpen(false)}
                 className="flex items-center justify-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-5 py-3 font-semibold text-blue-700 hover:bg-blue-100"
               >
@@ -132,10 +132,10 @@ export function Header() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                Call / Text
+                Contact
               </a>
             </li>
             <li>
@@ -144,7 +144,7 @@ export function Header() {
                 onClick={() => setMenuOpen(false)}
                 className="block rounded-full bg-blue-600 px-5 py-3 text-center font-semibold text-white hover:bg-blue-700"
               >
-                Get a Quote
+                Request a Quote
               </a>
             </li>
           </ul>

@@ -16,7 +16,7 @@ export const faqs = [
   },
   {
     question: 'What size are the totes?',
-    answer: 'Our starter totes are approximately 27 x 17 x 12 inches.',
+    answer: 'Our starter totes are approximately 21 x 15 x 12 inches.',
   },
   {
     question: 'Are the totes cleaned?',
